@@ -1,15 +1,15 @@
 <?php
-   require('session.php');
+ // require('session.php');
 ?>	
 	<!-- Nav horizontalnav -->
     <title>Welcome </title>
     <link rel="stylesheet" type="text/css" href="homestyle.css">
     <script src="jquery.min.js"></script>
 <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/horizontalnav.css" />
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="js/horizontalnav.js"></script>
 
 
@@ -32,7 +32,9 @@
 							</div></a>
 		</div>
 		<!-- /open close menu-->
-					<?php require 'php-static-component/search-bar.php'?>
+					<?php 
+				require 'php-static-component/search-bar.php'
+					?>
 							<!-- horizontalnav close menu-->
 			   <div class= "eventpopupwrap">
 			   <div class = "eventpopup">
@@ -71,8 +73,8 @@
 			 <div class="rightpanel">
 <!-- start of user drop down -->
                             <link rel="stylesheet" type="text/css" href="css/style.css" />
-                            <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
-
+                            <!--<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+-->
                             <div class="container-left">
                                 <section class="main left">
 									 
@@ -96,7 +98,7 @@
 
                             </div>
                             <!-- jQuery if needed -->
-                            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+                            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
                             <script type="text/javascript">
 
                                 function DropDown5(el) {
@@ -136,7 +138,9 @@
 				<!-- mp-menu -->
 				<nav id="mp-menu" class="mp-menu">
 					<div class="mp-level">
-						<?php require 'php-static-component/nav.php'?>
+						<?php 
+						require 'php-static-component/nav.php'
+						?>
 					</div>
 				</nav>
 				<!-- /mp-menu -->
@@ -177,7 +181,9 @@
                                         <div class="row">
 											
                                    <form action="feed/feedcollect.php" method="post" role="form" enctype="multipart/form-data" class="facebook-share-box" target = "targetframe">
-							<!-- type starts--><div><?php require 'php-static-component/droptype.php'?>
+							<!-- type starts--><div><?php 
+							//require 'php-static-component/droptype.php'
+							?>
 												</div>
 													<div class="col-md-6 col-md-offset-3">
                                                     <ul class="post-types">
@@ -199,7 +205,7 @@
                                                             <div class="panel-heading"><i class="fa fa-file"></i>Update Status</div>
                                                             <div class="panel-body">
 																	<div class="wrap-post">
-															<img style="float:left; margin:7" width="40px" height="40px" src="http://cashy.s3.amazonaws.com/images%2Farticles%2Fcontributors%2Fdisplay%2Fuser-icon-silhouette-dd6c3d8c7e5dee8f722747875be985e7.png">	</img>
+															<img style="float:left; margin:7" width="40px" height="40px" src="https://cashy.s3.amazonaws.com/images%2Farticles%2Fcontributors%2Fdisplay%2Fuser-icon-silhouette-dd6c3d8c7e5dee8f722747875be985e7.png">	</img>
                                                                 <div class="textpost">
                                                                     <textarea name="title-mainfeed" cols="40" rows="10" id="status_title" class="form-control message" style="height: 31; overflow: hidden;" placeholder="Title"></textarea>
                                                                     <textarea name="mainfeed" cols="40" rows="10" id="status_message" class="form-control message" style="height: 31; overflow: hidden;" placeholder="Description"></textarea>
@@ -217,7 +223,7 @@
         <h2>Select a course!</h2>
 		<select name = "linkeditem">
 			<option value=0>select a course</option>
-			<?php require 'course/courselistprint.php' ?>
+			<?php include 'course/courselistprint.php' ?>
 		</select>
 		   <button type="button" id = "hidepopup" class="btn btn-default"><i class="icon icon-map-marker">Close</i></button>
 
@@ -243,7 +249,9 @@
                                                         </div>
 														
                                                     </div>
-													 <div class="containerdropboxes"><?php require 'php-static-component/dropdownmenu.php'?>
+													 <div class="containerdropboxes"><?php 
+													 //require 'php-static-component/dropdownmenu.php'
+													 ?>
                                                              <input type="submit" name="submit" id = "mainpost" value="Post" class="btn btn-primary"></div>
 											
                                             </div>
