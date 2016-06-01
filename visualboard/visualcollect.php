@@ -45,7 +45,7 @@ if (mysqli_query($conn, $sql)) {
 	$target_Path = $target_Folder.basename( $_FILES['uploadfile']['name'] );
 $savepath = $target_Path.basename( $_FILES['uploadfile']['name'] );
         move_uploaded_file( $_FILES['uploadfile']['tmp_name'], "../$target_Path" );
-    header ('location: ../welcome.php'); 
+    header ('location: ../index.php'); 
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
