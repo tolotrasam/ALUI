@@ -1,4 +1,4 @@
 <?php 
 echo 'hello from the other siiiiiiiide';
-require 'login.html';
+require ''php-static-component/dropdownmenu.php'';
 ?>
