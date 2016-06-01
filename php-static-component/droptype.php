@@ -57,7 +57,7 @@
 
                                                                                 $(function () {
 
-                                                                                    var dd = new DropDown($('#dd3'));
+                                                                                    var dd = new DropDownIco($('#dd3'));
 
                                                                                     $(document).click(function () {
                                                                                         // all dropdowns
