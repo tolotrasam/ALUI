@@ -182,7 +182,7 @@
 											
                                    <form action="feed/feedcollect.php" method="post" role="form" enctype="multipart/form-data" class="facebook-share-box" target = "targetframe">
 							<!-- type starts--><div><?php 
-							//require 'php-static-component/droptype.php'
+							require 'php-static-component/droptype.php'
 							?>
 												</div>
 													<div class="col-md-6 col-md-offset-3">
@@ -250,7 +250,7 @@
 														
                                                     </div>
 													 <div class="containerdropboxes"><?php 
-													 //require 'php-static-component/dropdownmenu.php'
+													 require 'php-static-component/dropdownmenu.php'
 													 ?>
                                                              <input type="submit" name="submit" id = "mainpost" value="Post" class="btn btn-primary"></div>
 											
