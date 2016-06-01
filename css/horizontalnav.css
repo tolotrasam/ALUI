@@ -1,0 +1,61 @@
+
+/* BASIC RESET */
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input{margin:0; padding:0;}
+html, body{
+	height: 100%;
+}
+/* HTML ELEMENTS */
+h1 { font: bold 65px/60px Helvetica, Arial, Sans-serif; text-align: center; color: #eee; text-shadow: 0px 2px 6px #333; }
+h1 small{ font-size: 20px; text-transform:uppercase; letter-spacing: 14px; display: block; color: #ccc; }
+h2 a { display: block; text-decoration: none; margin: 0 0 30px 0; font: italic 45px Georgia, Times, Serif;  text-align: center; color: #bfe1f1; text-shadow: 0px 2px 6px #333; }
+h2 a:hover { color: #90bcd0; }
+a { outline:none; }
+
+/* COMMON CLASSES */
+.break { clear:both; }
+
+/* WRAPPER */
+#wrapper { position: relative; width:100%; margin:0 auto;min-height: 100%;  }
+
+/* CONTENT */
+#content { }
+#content p { margin:10px; }
+
+/* MENU */
+#menu { text-align: center;
+margin-left:20px }
+#menu ul { list-style:none;
+display: inline-block }
+#menu ul li { display:inline; float:left; margin-bottom:20px; }
+
+/* :first-child pseudo selector with rounded top left corner */
+#menu ul li:first-child a { -moz-border-radius-topleft: 12px; -webkit-border-top-left-radius:12px; }
+
+/* :last-child pseudo selector with rounded top right corner */
+#menu ul li:last-child a { -moz-border-radius-topright: 12px; -webkit-border-top-right-radius:12px; }
+
+/* background color set to RGBA, with opacity on 0.3 and also using text-shadow */
+#menu ul li a { padding:20px; background: rgba(0, 0, 0, 0.3); text-decoration: none; font: bold 23px Helvetica, Sans-Serif; letter-spacing: -1px; color: #402e16;
+	text-shadow: #eee 0px 0px 2px; }
+	
+/* hover state shows a linear gradient and opacity it brought down to 0.9 and also shows a very slight grey gradient on top */
+#menu ul li a:hover { 
+-moz-box-shadow: 0 -5px 10px #777; -webkit-box-shadow: 0 -5px 10px #777;
+	background-color:rgb(255,173,10) ;
+	background: -webkit-gradient(
+		linear, right bottom, left top, color-stop(0, white), color-stop(0.72, white)) ;
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+
+/* another RGBA background, now with an opacity of 0.8 */
+#menu ul li a.active { background:white ; -webkit-box-shadow: 0 -5px 10px #777; }
+
+/* main contents with RGBA background (same colour as active tab) and three rounded corners */
+#main { clear:both;  width:100%; margin-left:0; 
+	-moz-border-radius-topright: 12px; -moz-border-radius-bottomright: 12px; -moz-border-radius-bottomleft: 12px;
+	-webkit-border-top-right-radius:12px; -webkit-border-bottom-right-radius:12px; -webkit-border-bottom-left-radius:12px;}
+	
+/* header with a text-shadow */
+#main h3 { text-transform:uppercase; padding:20px 0 0 20px; color:#eee; text-shadow: #000 0px 0px 2px; }
+#main p { padding-bottom:10px; color:black; }
