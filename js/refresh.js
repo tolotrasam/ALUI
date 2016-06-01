@@ -52,7 +52,7 @@ var checkUpdates = function()
 	// alert ('checkpoint1');
 	// alert (href);
 
-		z = "http://localhost/project/ALUi%20Dynamic/ALUi%20Dynamic/activeusers/listeneractiveusers.php";
+		z = "activeusers/listeneractiveusers.php";
 						
 				// clearInterval(serverPollMessage);
     serverPollMessage = setInterval( function()
