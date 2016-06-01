@@ -33,12 +33,12 @@ if ($result->num_rows > 0) {
 		   echo '<div class = "warplist">';
 		   echo '<div class = "chatlistcontainer">';
 		   echo '<div class = "thumbnail">';
-		   echo '<img width = "40px" height = "40px" src = "http://cashy.s3.amazonaws.com/images%2Farticles%2Fcontributors%2Fdisplay%2Fuser-icon-silhouette-dd6c3d8c7e5dee8f722747875be985e7.png"></img>';
+		   echo '<img width = "40px" height = "40px" src = "https://cashy.s3.amazonaws.com/images%2Farticles%2Fcontributors%2Fdisplay%2Fuser-icon-silhouette-dd6c3d8c7e5dee8f722747875be985e7.png"></img>';
 		   echo'</div>';
 		   echo'<div class = "chatlisttext">';
 		   echo '<div class = "linkfloat" address = "'.$activeuser.'" link = "privatetalk/livechat/livechat.php?tablemessage='.$conversation_name.'&contact='.$activeuser.'"> '.$full_name_active.'</div>';
 		   echo ' <div class = "emotion">&nbsp is '.$emotion.' </div> ';
-		   echo '<span class = "greenbubble"><img src = "http://localhost/project/ALUi%20Dynamic/ALUi%20Dynamic/activeusers/img/shortcode-green-dot.png"></img></span>';
+		   echo '<span class = "greenbubble"><img src = "../activeusers/img/shortcode-green-dot.png"></img></span>';
 		   echo'</div></div>';
 		echo'</div>'; }
 		//inactive users
@@ -47,7 +47,7 @@ if ($result->num_rows > 0) {
 		   echo '<div class = "warplist">';
 		   echo '<div class = "chatlistcontainer">';
 		   echo '<div class = "thumbnail">';
-		   echo '<img src = "http://cashy.s3.amazonaws.com/images%2Farticles%2Fcontributors%2Fdisplay%2Fuser-icon-silhouette-dd6c3d8c7e5dee8f722747875be985e7.png" width = "40px" height = "40px"></img>';
+		   echo '<img src = "https://cashy.s3.amazonaws.com/images%2Farticles%2Fcontributors%2Fdisplay%2Fuser-icon-silhouette-dd6c3d8c7e5dee8f722747875be985e7.png" width = "40px" height = "40px"></img>';
 		   echo'</div>';
 		   echo'<div class = "chatlisttext">';
 		   echo '<div class = "linkfloat" address = "'.$activeuser.'" link = "privatetalk/livechat/livechat.php?tablemessage='.$conversation_name.'&contact='.$activeuser.'"> '.$full_name_active.'</div>';
