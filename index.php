@@ -1,5 +1,5 @@
 <?php
- // require('session.php');
+ require('session.php');
 ?>	
 	<!-- Nav horizontalnav -->
     <title>Welcome </title>
@@ -33,7 +33,7 @@
 		</div>
 		<!-- /open close menu-->
 					<?php 
-				require 'php-static-component\search-bar.php'
+				require 'php-static-component/search-bar.php'
 					?>
 							<!-- horizontalnav close menu-->
 			   <div class= "eventpopupwrap">
