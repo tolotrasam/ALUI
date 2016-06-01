@@ -1,0 +1,43 @@
+#main {
+	background-color: #E91E63;
+}
+a {
+	color: white;
+}
+header {
+		background: 
+		-webkit-gradient( linear, right bottom, left top, color-stop(0, #E91E63), color-stop(0.72, rgb(255, 0, 0)))
+}
+#menu ul {
+/* 	background-color: rgba(255, 255, 255, 0.8) !important */
+    background: rgb(243, 33, 33);
+}
+#menu ul li a {
+	background-color: rgba(232, 6, 6, 0.67);
+}
+#menu ul li a.active{
+	background-color:#F44336 !important;
+	background:
+
+		 -moz-box-shadow: 0 -5px 10px #777; 
+-webkit-box-shadow: 0 -5px 10px #777;
+
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}
+#menu ul li a:hover {
+	 
+	background: 
+		-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 208, 208)), color-stop(0.72, rgb(255, 34, 34)));
+	background:
+		-moz-linear-gradient(right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	background-color: rgba(255, 255, 255, 0.8) !important;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+	
+	
+.warplist:hover {
+    background-color: rgba(244, 67, 54, 0.76);
+}
+.mp-level {
+background: #F44336;}

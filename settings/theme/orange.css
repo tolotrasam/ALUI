@@ -1,0 +1,38 @@
+header {
+background:-webkit-gradient( linear, right bottom, left top, color-stop(0, #FFEB3B), color-stop(0.72, rgb(255, 142, 0)))}
+a {
+	color: white;
+}
+#menu ul {
+/* 	background-color: rgba(255, 255, 255, 0.8) !important */
+}
+#main {
+	background-color: rgba(255,138,30,0.8);
+}
+#menu ul li a {
+	background-color: rgba(255,138,30,0.3);
+}
+#menu ul li a.active{
+	background-color:rgba(255, 138, 30, 0.8)!important;
+	background:
+	-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 255, 255)), color-stop(0.72, rgb(46, 34, 255)))
+		 -moz-box-shadow: 0 -5px 10px #777; 
+		 -webkit-box-shadow: 0 -5px 10px #777;
+	
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}
+#menu ul li a:hover {
+	 
+	-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 255, 255)), color-stop(0.72, #FF9800))
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+.warplist:hover {
+    background-color: rgba(255, 161, 75, 0.86);
+    cursor: hand;
+}
+.mp-level {
+background: #FF9800}

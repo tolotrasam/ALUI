@@ -1,0 +1,404 @@
+
+   @import url(http://weloveiconfonts.com/api/?family=fontawesosender|iconicstroke|typicons);
+
+
+   /* fontawesosender */
+
+   [class*="fontawesosender-"]:before {
+
+    font-family: 'FontAwesosender', sans-serif;
+
+  }
+
+  /* iconicstroke */
+
+  [class*="iconicstroke-"]:before {
+
+    font-family: 'IconicStroke', sans-serif;
+
+  }
+
+  /* typicons */
+
+  [class*="typicons-"]:before {
+
+    font-family: 'Typicons', sans-serif;
+
+  }
+
+  body{
+
+    font-family:arial,sans-serif;
+	overflow: hidden;
+	margin: 0 0;
+	height: 100%;
+
+  }
+
+  .warp {
+position: relative;
+    width: 100%;
+height: 82%;
+    margin: 0 auto;
+
+  }
+
+  .top-header {
+
+    background: rgba(75, 72, 220, 0.88);
+
+    color: white;
+
+    padding: 0.2rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-bottom: 4px solid #49DEEC;
+	
+
+  }
+
+  .top-header:hover {
+
+    background-color:#23F0F7;
+
+  }
+
+  .top-header-tit {
+
+    display: inline;
+
+    font-size: 14px;
+
+  }
+
+  .top-header .typicons-senderssage {
+
+    display: inline-block;
+
+    padding: 2px 5px 2px 5px;
+
+    font-size: 20px;
+
+    position: relative;
+
+    top: 5px;
+
+  }
+
+  .top-header .typicons-minus,  .top-header  .iconicstroke-x {
+
+    position: relative;
+
+    top: 3px;
+
+    font-size: 15px;
+
+    cursor:pointer;
+
+  }
+
+  .top-header .typicons-tisenders{
+
+    position: relative;
+
+    top: 3px;
+
+    font-size: 15px;
+
+    cursor:pointer;
+
+  }
+
+  .top-header .left {
+
+    float: left;
+
+  }
+
+  .top-header .right {
+
+    float: right;
+
+    padding-top: 5px;
+
+  }
+
+  .top-header > * {
+
+    position: relative;
+
+  }
+
+  .top-header::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: -100%;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -100%;
+
+    opacity: 0.25;
+
+    background-color: #404040
+
+  }
+
+  .chatbox {
+
+    list-style: none;
+
+    background: #e5e5e5;
+
+    margin: 0;
+
+    padding: 0 0 50px 0;
+
+    height: 100%;
+
+    overflow-y: auto;
+
+  }
+
+  .chatbox li {
+
+    padding: 0.5rem;
+
+    overflow: hidden;
+
+    display: flex;
+
+  }
+
+  .chatbox .avatar-icon {
+
+    width: 40px;
+	height: 40px;
+
+    position: relative;
+
+  }
+
+  .chatbox .avatar-icon img {
+
+    display: block;
+
+    width: 100%;
+ height: 100%;
+    background-color:#1469A6;
+
+  }
+
+  .recipient .avatar-icon:after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 0;
+
+    height: 0;
+
+    border: 5px solid white;
+
+    border-left-color: transparent;
+
+    border-bottom-color: transparent;
+
+  }
+
+  .sender {
+
+    justify-content: flex-end;
+
+    align-items: flex-end;
+
+  }
+
+  .sender .message-text {
+
+    order: 1;
+
+    border-bottom-right-radius: 0;
+
+  }
+
+  .sender .avatar-icon {
+
+    order: 2;
+
+  }
+
+  .sender .avatar-icon:after {
+
+    content: '';
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 0;
+
+    height: 0;
+
+    border: 5px solid white;
+
+    border-right-color: transparent;
+
+    border-top-color: transparent;
+
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .message-text {
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 2px;
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .message-text p {
+
+    font-size: 0.8rem;
+
+    margin: 0 0 0.2rem 0;
+
+  }
+
+  .message-text tisender {
+
+    font-size: 0.7rem;
+
+    color: #ccc;
+
+  }
+
+  .setting{
+
+    background-color: #e5e5e5;
+
+    height: 32px;
+
+    padding-top: 2px;
+
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+  }
+
+  .setting .left {
+
+    float: left;
+
+  }
+
+  .setting .right {
+
+    float: right;
+
+  }
+
+  .iconicstroke-user{
+
+   font-size: 22px;
+
+   position: relative;
+
+   top: 4px;
+
+   left: 10px;
+
+   color: #414141;
+
+   cursor:pointer;
+
+ }
+
+  
+
+ .typicons-cog{
+
+   font-size: 23px;
+
+   position: relative;
+
+   top: 7px;
+
+   right: 4px;
+
+   color: #414141;
+
+   cursor:pointer;
+
+ }
+
+ .fontawesosender-facetisender-video{
+
+   font-size: 18px;
+
+   position: relative;
+
+   top: 3px;
+
+   color: #414141;
+
+   left: 5px;
+
+   cursor:pointer;
+
+ }
+
+ .iconicstroke-user:hover, .typicons-cog:hover,.fontawesosender-facetisender-video:hover{
+
+  color:#000000;
+
+}
+
+::-webkit-scrollbar{height:14px;width:10px;background:#eee;border-left:1px solid #ddd}
+
+::-webkit-scrollbar-thumb{background:#ddd;border:1px solid #cfcfcf}
+
+::-webkit-scrollbar-thumb:hover{background:#b2b2b2;border:1px solid #b2b2b2}
+
+::-webkit-scrollbar-thumb:active{background:#b2b2b2;border:1px solid #b2b2b2}
+
+@-webkit-keyfrasenders pulse {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 0.5;
+
+  }
+
+}
+h4 {
+	margin: 10px;
+}
+
+</style>
+

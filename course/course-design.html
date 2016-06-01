@@ -1,0 +1,458 @@
+	<html lang="en" class="no-js">
+<head>
+	<!-- <link rel="stylesheet" href="course/css/style.css" media="screen" /> -->
+	<link rel="stylesheet" href="css/design-style.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- <script src="course/js/jquery.timelinr-0.9.6.js"></script> -->
+	 <script src="js/jquery.timelinr-0.9.6.js"></script> 
+	<script>
+		$(function(){
+			$().timelinr({
+				arrowKeys: 'true'
+			})
+		});
+	</script>
+	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+	
+<style>
+.wrapperpage {
+			width:80%!important;
+		}
+</style>
+	</head>
+
+<body>
+<div class = "wrapper-course">
+<form action = "coursecollect.php?platform=preview_course" target = "target-preview" method= "post"  enctype="multipart/form-data">	
+<input class = "form-button" type = "button" value = "Publish"/>
+<input class = "form-button" type = "submit" formaction="coursecollect.php?platform=course" value = "Save"/>
+<input class = "form-button" type = "submit" value = "Preview"  />
+<input  class = "form-button" type = "button" value = "Share"/>
+	<div id="timeline">
+		<ul id="dates">
+			<li><a href="#1900">General setting</a></li>
+			<li><a href="#1930">Overview</a></li>
+			<li><a href="#1944">Objectives</a></li>
+			<li><a href="#1950">Deliverables</a></li>
+			<li><a href="#1971">Leaderning Outcomes:</a></li>
+			<li><a href="#1977">Tasks and Resources 1:</a></li>
+			<li><a href="#1989">Tasks and Resources 2:</a></li>
+			<li><a href="#1999">Tasks and Resources 3:</a></li>
+			<li><a href="#2001">Tasks and Resources 4:</a></li>
+			<li><a href="#2011">Add more elements</a></li>
+			<!-- <li><a href="#2012">Tasks and Resources 5:</a></li> -->
+		</ul>
+		<ul id="issues">
+			<li class = "step"id="1900">
+			<div class = "wrapperpage">
+									<h1>Course details:</h1><br>
+									<h2>Type</h2>
+									<select name = "type">
+										<option value = "">--Select a type--</option>
+										<option value = "Peer work">Peer work</option>
+										<option value = "Self work">Self work</option>
+										<option value = "Project">Project</option>
+										<option value = "Discovery">Discovery</option>
+										<option value = "In Class">In Class</option>
+										<option value = "Free resources">Free ressources</option>
+									</select>
+									<h2>Assessment method:</h2>
+									<select name = "assessment">
+										<option value = "">--Select the method of assessment--</option>
+										<option value = "summative">Summative</option>
+										<option value = "formative">Formative</option>
+									</select>
+									<h2>Course</h2>
+									<select name="course" class="">
+										<option value="" selected="selected">--Select the course--</option>
+										<option value="DnD" >DnD</option>
+										<option value="Project">Project</option>
+										<option value="C4I">C4I</option>
+										<option value="EL">EL</option>
+										<?php //include 'feed/audience.php'?>
+									</select>
+										<h2>Week</h2>
+									<select name="week" class="">
+										<option value="" selected="week 1">--Select the week--</option>
+										<option value="1" selected="week 1">Week 1</option>
+										<option value="2" selected="week 2">Week 2</option>
+										<option value="3" selected="week 3">Week 3</option>
+										<option value="4" selected="week 4">Week 4</option>
+										<option value="5" selected="week 5">Week 5</option>
+										<option value="6" selected="week 6">Week 6</option>
+										<option value="7" selected="week 7">Week 7</option>
+										<option value="8" selected="week 8">Week 8</option>
+										<option value="9" selected="week 8">Week 9</option>
+										<option value="10" selected="week 8">Week 10</option>
+										<option value="11" selected="week 8">Week 11</option>
+										<option value="12" selected="week 8">Week 12</option>
+									</select>
+									<h1>My Students</h1>
+									<h2>Class:</h2>
+									<select name="year" class="">
+
+										<option value="">--Select which cohort year--</option>
+										<option value="September 2015">September 2015</option>
+										<option value="January 2016">January 2016</option>
+										<option value="September 2016">September 2016</option>
+										<option value="January 2017">January 2017</option>
+
+									<?php //include 'feed/audience.php'?>
+									</select>
+
+									<h2>Cohort</h2>
+									<select name="cohort" class="">
+										<option value = "" selected="selected A">--select the cohort group--</option>
+										<option selected="selected A">A1</option>
+										<option  selected="selected A">A2</option>
+										<option >B1</option>
+										<option >B2</option>
+										<option >B3</option>
+										<option >B4</option>
+										<option value="All">All</option>
+									</select>
+									<br>
+									Deadline:
+									<br>
+										<input type = "date" name = "deadline" />
+									At:
+										<input type = "time" name = "hour" placeholder = "hour"/>
+									<br>
+			</div>
+			</li>
+			<li class = "step"id="1930">
+			<div class = "wrapperpage">
+				<h1>Overview</h1>
+				<h2>About</h2>
+							<br>
+							<input name = "topic" type = "text" placeholder = "topic" /><br>
+							<input name = "title" type = "text" placeholder = "title" /><br>
+							<input name = "overview" type = "text" placeholder = "overview link" />
+							
+									<link rel="stylesheet" type="text/css" href="css/component.css" />
+	
+		<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+		<div class="box">
+					<input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+					<label for="file-5"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
+				</div>
+					<script src="js/custom-file-input.js"></script>
+
+						<h2>Suggested duration: <span id = "result0"></h2> </span><br>
+<input id="mine0" name = "duration" type="range" min="10" max="450" value="0" step="10" onChange="change0();"> <span id="result"></span>
+
+<script>
+function change0(){
+var result = document.getElementById("result0");
+var mine = document.getElementById("mine0");
+ 
+   var a = mine.value;
+var hours = Math.trunc(a/60);
+  var minutes = a % 60;
+  result.innerText = (hours +":"+ minutes);
+
+}
+</script>
+							<textarea name = "description"  placeholder = "description" >Description...</textarea>
+							<br>
+			</div>
+			</li>
+			<li class = "step"id="1944">
+				
+							<div id = "objective">
+							<h1>Objectives:</h1>
+							<br>
+							<textarea name = "objective1" type = "text" placeholder = "objective1" > At the end of this lesson, students should be able to:<br>[Paste here...]</textarea><br>
+							<!--<input name = "objective2" type = "text" placeholder = "objective2" /><br>
+							<input name = "objective3" type = "text" placeholder = "objective3" /><br>
+							<input name = "objective4" type = "text" placeholder = "objective4" /><br>
+							<input name = "objective5" type = "text" placeholder = "objective5" /><br>-->
+							+add more objectives
+							</div>
+			</li>
+			<li class = "step"id="1950">
+				
+				
+						<div id = "deliverable">
+						<h1>Deliverable:</h1>
+						<br>
+						<textarea name = "deliverable1"  placeholder = "deliverable1" >List of deliverables:<br>[Paste here...]</textarea>
+						<!--<input name = "deliverable2" type = "text" placeholder = "deliverable2" /><br>
+						<input name = "deliverable3" type = "text" placeholder = "deliverable3" /><br>
+						<input name = "deliverable4" type = "text" placeholder = "deliverable4" /><br>-->
+						+add more deliverables
+						</div>
+				
+			</li>
+			<li class = "step"id="1971">
+				<div class = "wrapperpage">
+							<br>
+							<h1>Learning outcomes:<h1>
+							<br>
+							<textarea name = "LO1"  placeholder = "LO1" name = "descriptionLO1"  placeholder = "description" >
+					
+							<h2>Learning outcomes:</h2>
+							
+							<table class="mce-item-table" style="width: 844px; height: 208px;" data-mce-style="width: 518px; height: 208px;"><tbody><tr style="height: 49px;" data-mce-style="height: 49px;"><td style="width: 63px; height: 49px;" data-mce-style="width: 63px; height: 49px;">LO1</td><td style="width: 240px; height: 49px;" data-mce-style="width: 240px; height: 49px;">[empty]</td><td style="width: 213px; height: 49px;" data-mce-style="width: 213px; height: 49px;">[empty description]</td></tr><tr style="height: 24px;" data-mce-style="height: 24px;"><td style="width: 63px; height: 24px;" data-mce-style="width: 63px; height: 24px;">LO2</td><td style="width: 240px; height: 24px;" data-mce-style="width: 240px; height: 24px;">[empty]</td><td style="width: 213px; height: 24px;" data-mce-style="width: 213px; height: 24px;">[empty description]</td></tr><tr style="height: 24px;" data-mce-style="height: 24px;"><td style="width: 63px; height: 24px;" data-mce-style="width: 63px; height: 24px;">LO3</td><td style="width: 240px; height: 24px;" data-mce-style="width: 240px; height: 24px;">[empty]</td><td style="width: 213px; height: 24px;" data-mce-style="width: 213px; height: 24px;">&nbsp;[empty description]</td></tr><tr style="height: 32.7708px;" data-mce-style="height: 32.7708px;"><td style="width: 63px; height: 32.7708px;" data-mce-style="width: 63px; height: 32.7708px;">LO4</td><td style="width: 240px; height: 32.7708px;" data-mce-style="width: 240px; height: 32.7708px;">&nbsp;[empty]</td><td style="width: 213px; height: 32.7708px;" data-mce-style="width: 213px; height: 32.7708px;">&nbsp;[empty description]</td></tr></tbody></table>
+							
+							</textarea>	<br>
+							<!--<input name = "LO2" type = "text" placeholder = "LO2" /><textarea name = "descriptionLO2"  placeholder = "description" ></textarea><br>
+							<input name = "LO3" type = "text" placeholder = "LO3" /><textarea name = "descriptionLO3"  placeholder = "description" ></textarea><br>
+							<input name = "LO4" type = "text" placeholder = "LO4" /><textarea name = "descriptionLO4"  placeholder = "description" ></textarea><br> -->
+							+add more learning outcome
+				</div>
+			</li>
+			<li class = "step"id="1977">
+				<div class = "wrapperpage">
+								<div class = "ressource">
+								<h1>Tasks and Resources 1:</h1>
+								<h2>Resource reference</h2>
+								<input name = "link1title" type = "text" placeholder = " Title..." />
+								<br>
+								<input name = "link1" type = "text" placeholder = "Link" />
+									<div class="box">
+					<input type="file" name="file1" id="file-1" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+					<label for="file-1"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
+				</div>
+					
+								<br>
+								<h2>Suggested duration:<span id = "result1"> </span></h2><br>
+<input id="mine1" name = "duration1" type="range" min="10" max="120" value="0" step="1" onChange="change1();"> <span id="result"></span>
+
+<script>
+ 
+function change1(){
+var result = document.getElementById("result1");
+var mine = document.getElementById("mine1");
+   var a = mine.value;
+var hours = Math.trunc(a/60);
+  var minutes = a % 60;
+  result.innerText = (hours +":"+ minutes);
+
+}
+</script>
+								<br>
+								<h1>Guide lines</h1>
+								<h2>Instructions:</h2>
+								<textarea name = "instruction1"  placeholder = "instruction" >Instructions</textarea>
+								<h2>Question to consider:</h2>
+								<textarea name = "question1" type = "text" placeholder = "question to consider" >Question to consider:<br>[Paste the questions here]</textarea>
+								</div>
+				</div>
+			</li>
+			<li class = "step"id="1989">
+				<div class = "wrapperpage">
+<div class = "ressource">
+<h1>Tasks and Resources 2:</h1>
+<h2>Resource reference</h2>
+<input name = "link2title" type = "text" placeholder = " Title..." />
+<br>
+<input name = "link2" type = "text" placeholder = "Link" />
+<div class="box">
+<input type="file" name="file2" id="file-2" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+<label for="file-2"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
+</div>
+
+<br>
+<h2>Suggested duration: <span id = "result2"> </span></h2><br>
+<input id="mine2" name = "duration2" type="range" min="10" max="120" value="0" step="1" onChange="change2();"> <span id="result"></span>
+
+<script>
+ 
+function change2(){
+var result = document.getElementById("result2");
+var mine = document.getElementById("mine2");
+   var a = mine.value;
+var hours = Math.trunc(a/60);
+  var minutes = a % 60;
+  result.innerText = (hours +":"+ minutes);
+
+}
+</script>
+<br>
+<h1>Guide lines</h1>
+<h2>Instructions:</h2>
+<textarea name = "instruction2"  placeholder = "instruction" >Instructions</textarea>
+<h2>Question to consider:</h2>
+<textarea name = "question2" type = "text" placeholder = "question to consider" >Question to consider:<br>[Paste the questions here]</textarea>
+</div>
+</div>
+
+			</li>
+			<li class = "step"id="1999">
+			
+			<div class = "wrapperpage">
+<div class = "ressource">
+<h1>Tasks and Resources 3:</h1>
+<h2>Resource reference</h2>
+<input name = "link3title" type = "text" placeholder = " Title..." />
+<br>
+<input name = "link3" type = "text" placeholder = "Link" />
+<div class="box">
+<input type="file" name="file3" id="file-3" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+<label for="file-3"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
+</div>
+
+<br>
+<h2>Suggested duration: <span  id = "result3"></h2> </span><br>
+<input id="mine3" name = "duration3" type="range" min="10" max="120" value="0" step="1" onChange="change3();"> <span id="result"></span>
+
+<script>
+function change3(){
+var result = document.getElementById("result3");
+var mine = document.getElementById("mine3");
+ 
+   var a = mine.value;
+var hours = Math.trunc(a/60);
+  var minutes = a % 60;
+  result.innerText = (hours +":"+ minutes);
+
+}
+</script>
+<br>
+<h1>Guide lines</h1>
+<h2>Instructions:</h2>
+<textarea name = "instruction3"  placeholder = "instruction" >Instructions</textarea>
+<h2>Question to consider:</h2>
+<textarea name = "question3" type = "text" placeholder = "question to consider" >Question to consider:<br>[Paste the questions here]</textarea>
+</div>
+</div>
+
+		
+			</li>
+			<li class = "step"id="2001">
+			<div class = "wrapperpage">
+<div class = "ressource">
+<h1>Tasks and Resources 4:</h1>
+<h2>Resource reference</h2>
+<input name = "link4title" type = "text" placeholder = " Title..." />
+<br>
+<input name = "link4" type = "text" placeholder = "Link" />
+<div class="box">
+<input type="file" name="file4" id="file-4" class="inputfile inputfile-4" data-multiple-caption="{count} files selected" multiple />
+<label for="file-4"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span>Choose a file&hellip;</span></label>
+</div>
+
+<br>
+<h2>Suggested duration:</h2> <span  id = "result4"> </span><br>
+<input id="mine4" name = "duration4" type="range" min="10" max="120" value="0" step="1" onChange="change4();"> <span id="result"></span>
+
+<script>
+function change4(){
+var result = document.getElementById("result4");
+var mine = document.getElementById("mine4");
+ 
+   var a = mine.value;
+var hours = Math.trunc(a/60);
+  var minutes = a % 60;
+  result.innerText = (hours +":"+ minutes);
+
+}
+</script>
+<br>
+<h1>Guide lines</h1>
+<h2>Instructions:</h2>
+<textarea name = "instruction4"  placeholder = "instruction" >Instructions</textarea>
+<h2>Question to consider:</h2>
+<textarea name = "question4" type = "text" placeholder = "question to consider" >Question to consider:<br>[Paste the questions here]</textarea>
+</div>
+</div>
+	
+			</li>
+			<li class = "step"id="2011">
+			<div class = "resources">
+			<select name = "addelement">
+			<h1>Add more elements to the timeline</h1>
+			<option>--Select what to add--</option>
+			<option>+Submit</option>
+			<option>+Rubric</option>
+			<option>+Additional Note</option>
+			</select>
+			<input type = "button" value = "+Add"/>
+			</div>
+			</li>
+		</ul>
+	
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+	</div>
+
+
+</form>
+
+</form>
+
+</div>
+
+
+
+<script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
+<style>
+.mce-tinymce {
+margin: auto;
+}
+</style>
+<script>
+tinymce.init({
+  selector: 'textarea',
+  menubar: false,
+  height: 300,
+  widht: 100,
+  theme: 'modern',
+  plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools'
+  ],
+  toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons',
+  image_advtab: true,
+  templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+  ],
+  content_css: [
+    '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+    '//www.tinymce.com/css/codepen.min.css'
+  ]
+ });
+ //input now
+ 
+tinymce.init({
+  selector: '',
+  menubar: false,
+  height: 300,
+  widht: 100,
+  theme: 'modern',
+  plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools'
+  ],
+  toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons',
+  image_advtab: true,
+  templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+  ],
+  content_css: [
+    '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+    '//www.tinymce.com/css/codepen.min.css'
+  ]
+ });
+</script>
+<script src="js/custom-file-input.js"></script>
+	</body>
+
+
+
+
+
+
+
+
+

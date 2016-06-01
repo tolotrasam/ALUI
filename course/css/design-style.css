@@ -1,0 +1,216 @@
+body {
+	background: white;
+	font-family: Georgia, serif;
+	color: #000;
+	font-size: 14px;
+	height:200%;
+}
+
+iframe {
+	margin: 0 auto;
+}
+
+select,input {
+    box-shadow: 0px 0px 30px #888888;
+    color: white;
+    height: 33px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.72);
+}
+input[type="text"]:focus {
+    height: 100px;
+}
+input[type="text"] {
+    width: 600px;
+    height: 41px;
+    padding: 14px;
+    margin: 2px;
+}
+input.form-button:hover {
+    background-color: #E91E63!important;
+    cursor: hand!important;
+    color: black!important;
+}
+select:hover {
+background-color: grey;	
+}
+a {
+	color: #ffffcc;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+}
+	a:hover,
+	a.selected {
+		color: #ffcc00;
+	}
+
+h1,h2,h4,h5,h6 {
+	text-align: left;
+	color: #black;
+	/* text-shadow: #000 1px 1px 2px; */
+	margin-bottom: 5px;
+	z-index:35;
+}
+	h1 {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 14px;
+	}
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		/* margin: 100px auto; */
+		position: relative;
+		background: url('../images/dot.gif') left 45px repeat-x;
+	}
+	#issues li{
+margin-left:;
+width: 1000;
+}
+
+#timeline {
+width: 100%;
+margin: 0 auto;
+}
+.wrapper-course {
+    height: 200%;
+}
+
+		#dates {
+			width: 800px;
+			height: 60px;
+			overflow: hidden;
+		}
+			#dates li {
+				list-style: none;
+				float: left;
+				width: 200px;
+				height: 50px;
+				font-size: 24px;
+				text-align: center;
+				background: url('../images/biggerdot.png') center bottom no-repeat;
+			}
+				#dates a {
+					line-height: 38px;
+					padding-bottom: 10px;
+				}
+				#dates .selected {
+			        font-size: 38px;
+				}
+		.wrapperpage, #objective, #deliverable {
+			width:80%!important;
+		}
+		#issues {
+			width: 800px;
+			height: 100%;
+			overflow: hidden;
+		}	
+			#issues li {
+				width: 950px;
+				
+				list-style: none;
+				float: left;
+			}
+				#issues li.selected img {
+					-webkit-transform: scale(1.1,1.1);
+					-moz-transform: scale(1.1,1.1);
+				    -o-transform: scale(1.1,1.1);
+				    -ms-transform: scale(1.1,1.1);
+				    transform: scale(1.1,1.1);
+				}
+				#issues li img {
+					float: left;
+					margin: 10px 30px 10px 50px;
+					background: transparent;
+					-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+					zoom: 1;
+					-webkit-transition: all 2s ease-in-out;
+					-moz-transition: all 2s ease-in-out;
+					-o-transition: all 2s ease-in-out;
+					-ms-transition: all 2s ease-in-out; 
+					transition: all 2s ease-in-out;
+					-webkit-transform: scale(0.7,0.7);
+					-moz-transform: scale(0.7,0.7);
+				    -o-transform: scale(0.7,0.7);
+				    -ms-transform: scale(0.7,0.7);
+				    transform: scale(0.7,0.7);
+				}
+				#issues li h1 {
+					/* color: #ffcc00;
+					font-size: 48px;
+					margin: 20px 0; */
+				
+				}
+				#issues li p {
+					font-size: 14px;
+					margin-right: 70px;
+					font-weight: normal;
+					line-height: 22px;
+					/* text-shadow: #000 1px 1px 2px; */
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 100px;
+			height: 350px;
+			position: absolute;
+			top: 0;
+		}
+			#grad_left {
+		        left: 0;
+		        background: url('../images/grad_left.png') repeat-y;
+			}
+			#grad_right {
+		        right: 0;
+		        background: url('../images/grad_right.png') repeat-y;
+			}
+		ul#dates{
+	width: 2000px;
+    margin-left: -167px;
+    height: 80px;
+    margin: 0;
+/* 	background-color:red; */
+		}
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				right: 0;
+				background-image: url('../images/next.png');
+			}
+			#prev {
+				left: 0;
+				background-image: url('../images/prev.png');
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}
+				
+				::-webkit-scrollbar{height:14px;width:5px;background:#eee;border-left:1px solid #ddd}

@@ -1,0 +1,74 @@
+header {
+		background: -webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(62, 255, 238)), color-stop(0.72, rgb(10, 0, 183)));
+}
+a {
+	color: white;
+}
+#menu ul {
+/* 	background-color: rgba(255, 255, 255, 0.8) !important */
+}
+#main {
+	background-color: rgba(24, 5, 172, 0.8)
+}
+#menu ul li a {
+	background-color: rgba(99, 70, 250, 0.22);
+}
+#menu ul li a.active{
+	background-color:rgb(40, 105, 255) !important;
+	background:
+
+		 -moz-box-shadow: 0 -5px 10px #777; 
+-webkit-box-shadow: 0 -5px 10px #777;
+	/* background: 
+		-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 255, 255)), color-stop(0.72, rgb(46, 34, 255))) ; */
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}
+#menu ul li a:hover {
+	 
+	background: 
+		-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 255, 255)), color-stop(0.72, rgb(46, 34, 255))) ;
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	background-color: rgba(255, 255, 255, 0.8) !important;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+header {
+		background: -webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(62, 255, 238)), color-stop(0.72, rgb(10, 0, 183)));
+}
+#menu ul {
+/* 	background-color: rgba(255, 255, 255, 0.8) !important */
+}
+#main {
+	background-color: rgba(24, 5, 172, 0.8)
+}
+#menu ul li a {
+	background-color: rgba(99, 70, 250, 0.22);
+}
+#menu ul li a.active{
+	background-color:rgb(40, 105, 255) !important;
+	background:
+
+		 -moz-box-shadow: 0 -5px 10px #777; 
+-webkit-box-shadow: 0 -5px 10px #777;
+	/* background: 
+		-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 255, 255)), color-stop(0.72, rgb(46, 34, 255))) ; */
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90;
+}
+#menu ul li a:hover {
+	 
+	background: 
+		-webkit-gradient( linear, right bottom, left top, color-stop(0, rgb(255, 255, 255)), color-stop(0.72, rgb(46, 34, 255))) ;
+	background: -moz-linear-gradient(
+		right bottom, rgb(237,227,112) 0%, rgb(255,173,10) 72%) ;
+	background-color: rgba(255, 255, 255, 0.8) !important;
+	-moz-opacity:.90; filter:alpha(opacity=90); opacity:.90; }
+.warplist:hover {
+    background-color: rgba(75, 130, 255, 0.86);
+    cursor: hand;
+}
+.mp-level {
+background: #2196F3;}
+

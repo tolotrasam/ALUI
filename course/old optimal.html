@@ -1,0 +1,397 @@
+<?php
+//echo '<br> checkpoint<br>';
+require '../../connect.php';
+//echo '<br> checkpoint<br>';
+
+
+//table variables
+$table = "course";
+//column
+$now = date("Y-m-d H:i:s",time());
+ 	 // echo $check;
+	  // $sql="SELECT * FROM $table where $datetbl < $now ORDER BY $datetbl DESC limit 30";
+  $sql="SELECT * FROM $table order by date desc limit 1";
+   // where id = (SELECT max(id) FROM $table)
+//echo '<br> checkpoint3<br>';
+
+  $result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+	// echo $check;
+//	echo '<br> checkpoint4<br>';
+
+      
+		$title = $row[title];
+		$author=	$row[author];
+$type=	$row[type];
+$assessment=	$row[assessment];
+$course=	$row[course];
+$year=	$row[year];
+$deadline=	$row[deadline];
+$hour=	$row[hour];
+$topic=	$row[topic];
+$title=	$row[title];
+$description=	$row[description];
+$duration=	$row[duration];
+$cohort=	$row[cohort];
+$category=	$row[category];
+$week=	$row[week];
+$deliverable1=	$row[deliverable1];
+$deliverable2=	$row[deliverable2];
+$deliverable3=	$row[deliverable3];
+$deliverable4=	$row[deliverable4];
+$LO1=	$row[LO1];
+$LO2=	$row[LO2];
+$LO3=	$row[LO3];
+$LO4=	$row[LO4];
+$descriptionLO1=	$row[descriptionLO1];
+$descriptionLO2=	$row[descriptionLO2];
+$descriptionLO3=	$row[descriptionLO3];
+$descriptionLO4=	$row[descriptionLO4];
+$objective1=	$row[objective1];
+$objective2=	$row[objective2];
+$objective3=	$row[objective3];
+$objective4=	$row[objective4];
+$link1=	$row[link1];
+$instruction1=	$row[instruction1];
+$question1=	$row[question1];
+$link2=	$row[link2];
+$instruction2=	$row[instruction2];
+$question2=	$row[question2];
+$link3=	$row[link3];
+$instruction3=	$row[instruction3];
+$question3=	$row[question3];
+$link4=	$row[link4];
+$instruction4=	$row[instruction4];
+$question4=	$row[question4];
+$link5=	$row[link5];
+$instruction5=	$row[instruction5];
+$question5=	$row[question5];
+$link6=	$row[link6];
+$instruction6=	$row[instruction6];
+$question6=	$row[question6];
+$link7=	$row[link7];
+$instruction7=	$row[instruction7];
+$question7=	$row[question7];
+$date=	$row[date];
+$coursecode=$row[coursecode];
+echo "title: $title";
+	}}
+?>
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+
+	
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title><?php echo $title; ?></title>
+    </head>
+	<head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     
+        <script type="text/javascript" src="inc/TimeCircles.js"></script>
+        <link rel="stylesheet" href="inc/TimeCircles.css" />
+	 
+    </head>
+	<head>
+<style type="text/css">
+body{
+    margin:0px;
+    background:#000;
+}
+.header-cont {
+    width:100%;
+    position:fixed;
+    top:0px;
+}
+.header {
+    height:200;
+    background:#F69697;
+    border:1px solid #CCC;
+    width:70%;
+    margin:0px auto;
+}
+.content {
+    width:70%;
+    background: #F0F0F0;
+    border: 1px solid #CCC;
+    height: 2000px;
+    margin: 177px auto;
+}
+	.rightpanel{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 1000px;
+	width: 10%;
+	 background: #F0F0F0;}
+	 
+	 .leftpanel{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 1000px;
+	width: 10%;
+	 background: #F0F0F0;}
+</style>
+</head>
+<body>
+ <div>
+<div class="header-cont">
+<div class="container"> 
+            <br><br>
+            <h2>Counting down 15 minutes (900 seconds)</h2>
+            <div id="CountDownTimer" data-timer="4900" ></div>
+            <button class="btn btn-success startTimer">Start Timer</button>
+            <button class="btn btn-danger stopTimer">Stop Timer</button>
+            
+
+</div>
+    <div class = "header"> 
+		<h1><?php echo  $title; ?></h1>
+		<h2> <?php echo $course; ?></h2>
+		<div class = "learningoutcomes">
+			LO1:
+			<br>
+			LO2:
+			<br>
+			LO3:
+			<br>
+			LO4:
+			<br>
+		</div>
+		
+	</div>
+</div>
+</div>
+ <div class = "rightpanel">
+	<div class = "goal" style = "float:left">
+
+	ASSIGNMENT GUIDE
+	Objectives: 
+	<br>
+	At the end of this assignment, students should be able to:
+	Introspect deeply about the status of their leadership journey.
+	Reflect on and articulate the enduring set of values that guide his/her leadership journey.
+	Synthesize leadership concepts learned thus far (PICS, Leadership Paradigms, Values) in the term.
+	Confidently articulate, in written form, their leadership story: past, present and future.
+
+	</div>
+	<div class = "duration" style = "float:left">
+	9hours</div>
+</div> 
+<div class = "leftpanel">
+<div class = "goal" style = "float:left">
+<div class = "deadline">
+<li><div class = "class">B3</div>23/07/2016	</li>
+<li><div class = "class">B1</div>23/07/2016	</li>
+</div>
+
+	</div>
+	<div class = "duration" style = "float:left">
+	9hours</div>
+</div>
+
+<div class = "content">
+	
+<!-- <div class="container">
+           
+            <hr>
+            <h2>Counting down 15 minutes (900 seconds)</h2>
+            <div id="CountDownTimer2" data-timer="4900" style="width: 1000px; height: 250px;"></div>
+            <button class="btn btn-success startTimer">Start Timer</button>
+            <button class="btn btn-danger stopTimer">Stop Timer</button>
+            <hr>
+
+        </div> -->
+
+	       <script>
+	           $("#DateCountdown").TimeCircles();
+	           $("#CountDownTimer").TimeCircles({ time: { Days: { show: false }, Hours: { show: false } } });
+	           $("#CountDownTimer2").TimeCircles({ time: { Days: { show: false }, Hours: { show: true } } });
+	           $("#PageOpenTimer").TimeCircles();
+
+	           var updateTime = function () {
+	               var date = $("#date").val();
+	               var time = $("#time").val();
+	               var datetime = date + ' ' + time + ':00';
+	               $("#DateCountdown").data('date', datetime).TimeCircles().start();
+	           }
+	           $("#date").change(updateTime).keyup(updateTime);
+	           $("#time").change(updateTime).keyup(updateTime);
+
+	           // Start and stop are methods applied on the public TimeCircles instance
+	           $(".startTimer").click(function () {
+	               $("#CountDownTimer").TimeCircles().start();
+	               $("#CountDownTimer2").TimeCircles().start();
+	           });
+	           $(".stopTimer").click(function () {
+	               $("#CountDownTimer").TimeCircles().stop();
+	               $("#CountDownTimer2").TimeCircles().stop();
+	           });
+
+	           // Fade in and fade out are examples of how chaining can be done with TimeCircles
+	           $(".fadeIn").click(function () {
+	               $("#PageOpenTimer").fadeIn();
+	           });
+	           $(".fadeOut").click(function () {
+	               $("#PageOpenTimer").fadeOut();
+	           });
+
+        </script>  
+        
+    <br>
+    <br>
+    <br>
+	tolotraaaaaaaaa	
+<section class="cd-horizontal-timeline">
+		<div class="wraptimeline">
+			<div class="timeline">
+			<div class = "events-wrapper-cont"> 
+			<div class="events-wrapper">
+				<div class="events">
+					<ol>
+						<li><a href="#0" data-date="16/01/2014" class="selected">Course Overview</a></li>
+						<li><a href="#0" data-date="28/02/2014">Deliverable Instructions</a></li>
+						<li><a href="#0" data-date="20/04/2014">Write</a></li>
+						<li><a href="#0" data-date="20/05/2014">Submit</a></li>
+					<!-- 	<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+						<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+						<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+						<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+						<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+						<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+						<li><a href="#0" data-date="03/03/2015">3 Mar</a></li> -->
+					</ol>
+
+					<span class="filling-line" aria-hidden="true"></span>
+				</div> <!-- .events -->
+			</div> <!-- .events-wrapper -->
+			</div> 
+			
+			<ul class="cd-timeline-navigation">
+				<li><a href="#0" class="prev inactive">Prev</a></li>
+				<li><a href="#0" class="next">Next</a></li>
+			</ul> <!-- .cd-timeline-navigation -->
+		</div> <!-- .timeline -->
+		</div> <!-- .timeline -->
+		
+
+	<div class="events-content">
+	<h2>Leadership Map Final Assignment</h2>
+		<ol>
+			<em>January 16th, 2014</em>	
+			<li class="selected" data-date="16/01/2014">	
+				<h2>Course Overview</h2>
+				<em>Something</em>
+
+
+
+     <a href = "https://docs.google.com/document/u/0/create?zx=qbddec4oxj73&usp=docs_webhttps://docs.google.com/document/u/0/create?zx=qbddec4oxj73&usp=docs_web" target = "start"><input type = "button" value =  "click" /></a>
+<input type = "button" onclick = "showlink()" value = "get link"/>
+<script>
+    function showlink() {
+        var link = $('#start').attr('src');
+        alert(link);
+    }
+</script>
+<iframe width="1280" height="720" src="" frameborder="0" allowfullscreen id = "start" name = "start"></iframe>
+			</li>
+
+			<li data-date="28/02/2014">
+				<h2>Event title here</h2>
+				<em>February 28th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+				
+<<iframe width="1280" height="720" src="https://docs.google.com/document" frameborder="0" allowfullscreen></iframe>
+			</li>
+
+			<li data-date="20/04/2014">
+				<h2>Event title here</h2>
+				<em>March 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/05/2014">
+				<h2>Event title here</h2>
+				<em>May 20th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="09/07/2014">
+				<h2>Event title here</h2>
+				<em>July 9th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="30/08/2014">
+				<h2>Event title here</h2>
+				<em>August 30th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="15/09/2014">
+				<h2>Event title here</h2>
+				<em>September 15th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="01/11/2014">
+				<h2>Event title here</h2>
+				<em>November 1st, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="10/12/2014">
+				<h2>Event title here</h2>
+				<em>December 10th, 2014</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="19/01/2015">
+				<h2>Event title here</h2>
+				<em>January 19th, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="03/03/2015">
+				<h2>Event title here</h2>
+				<em>March 3rd, 2015</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+</div>
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

@@ -1,0 +1,113 @@
+<?php
+   require('../session.php');
+?>
+<html>
+<head>
+      <title>Welcome </title>
+ <link type="text/css" rel="stylesheet" href="cb_style.css" />
+ <style>
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:1px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+.active {line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:100px;
+    float:right;
+    padding:5px;	      
+}
+.active2 {line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:200px;
+    float:left;
+    padding:5px;	 	 
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+ <script src="jquery.min.js"></script>
+   
+			<script>
+ setInterval (function()
+ {
+  // a function which will load data from other file after x seconds
+      $("#overtime").load("../activeusers/overtime.php").fadeIn("slow");
+// refresh div after  secs  
+},2000);  
+            </script>
+				<script>
+ setInterval (function()
+ {
+  // a function which will load data from other file after x seconds
+      $(".activelist").load("../activeusers/listofactiveusers.php").fadeIn("slow");
+// refresh div after  secs  
+},1000);  
+            </script>
+   <script>
+   
+ setInterval (function()
+ {
+  // a function which will load data from other file after x seconds
+      $("#chatbox").load("chatprint.php").fadeIn("slow");
+// refresh div after  secs  
+}, 200);  
+            </script>
+</head>
+<body>
+<header>
+<h1><a class = "h1" href="../welcome.php">Tolotra Net</a></h1>
+</header>
+<div class = "active"> 
+<div class = "title" > Online Users </div> 
+<div class = "activelist" ></div>
+<div id = "overtime">  </div> </div>
+<nav>
+InstantChat<br>
+Forum<br>
+Call<br>
+Room Invite
+</nav>
+<section>
+<h1>InstantChat</h1>
+ </section>
+	<div id="wrapper">
+		<div id="menu">
+	        <p class="welcome">Welcome <?php echo $login_session; ?>, <b></b></p>
+			<p class="logout"><a id="exit" href="../welcome.php">Exit Chat</a></p>
+				<div id="chatbox">
+				</div>
+		</div>  
+		<form name="message" action="php/collect.php" method = "post">
+        <input name="usermsg" type="text" id="usermsg" size="63" />
+        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+    </form>
+	</div>
+ </body>
+ <h2><a href = "../logout.php">Sign Out</a></h2>
+      <footer>
+Copyright © TolotraNet @ Tolotra Corporation
+</footer>
+</html>
+
