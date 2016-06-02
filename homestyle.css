@@ -136,7 +136,7 @@ nav, .rightpanel,.visionboard {
     right: 21px;
 	box-shadow: none;
 		max-width:23%;
-		z-index:999;
+		z-index:3;
 	}		
 	/* end of nav */
 
