@@ -328,7 +328,7 @@ h2 { color: black;}
 	bottom: 0;
 	right: 12%;
 	overflow: ;
-	z-index: ;
+	z-index: 999 ;
 	pointer-events: none;
 	}
 	
