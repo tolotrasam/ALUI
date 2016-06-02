@@ -269,6 +269,6 @@ $('#left-hider').click(function(){
 	// alert ('none');
 // }if (typeof gadget["AL"] == 'undefined') {
 	 // alert (gadget);
-// $(".visualwrapper").load(gadget)
+ $(".visualwrapper").load(gadget)
   })
 	
