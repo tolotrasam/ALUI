@@ -223,7 +223,7 @@
         <h2>Select a course!</h2>
 		<select name = "linkeditem">
 			<option value=0>select a course</option>
-			<?php //include 'course/courselistprint.php' ?>
+			<?php include 'course/courselistprint.php' ?>
 		</select>
 		   <button type="button" id = "hidepopup" class="btn btn-default"><i class="icon icon-map-marker">Close</i></button>
 
