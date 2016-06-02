@@ -4,6 +4,9 @@ require('../session.php');
 require '../connect.php';
 echo $theme = $_POST['theme'];
 echo $gadget = $_POST['gadget'];
+if (empty($gadget)){
+ $gadget = 'none';
+};
  $theme;
 //insert time
 date_default_timezone_set('Russia/Moscow');
